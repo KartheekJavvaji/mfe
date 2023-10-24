@@ -23,7 +23,7 @@ module.exports = function () {
         chunkFilename: 'static/js/[name].chunk.js',
         assetModuleFilename: 'static/media/[name].[hash][ext]',
         publicPath: env.raw.shouldBuildAsMFE ? 'auto' : '/',
-        uniqueName: 'webapp-root'
+        uniqueName: 'webapp-module1'
       },
       devServer: {
         static: path.join(process.cwd(), '/public'),

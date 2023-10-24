@@ -72,6 +72,11 @@ module.exports = function(env) {
             singleton: true,
             requiredVersion: false
           },
+          '@mui/x-date-pickers/': {
+            singleton: true,
+            requiredVersion: false,
+            version: false,
+          }
         }
       }),
       new webpack.DefinePlugin(env.stringified), // TODO verify this behaviour

@@ -83,10 +83,10 @@ const shortcutsItems: PickersShortcutsItem<DateRange<Dayjs>>[] = [
   { label: "Reset", getValue: () => [null, null] }
 ];
 
-function Page3() {
+function Page1() {
   return (
     <Stack>
-      <Typography>local app | needs root to have singleton LocalizationProvider</Typography>
+      <Typography>remote app | needs root to have singleton LocalizationProvider</Typography>
       
       <StaticDateRangePicker
         slotProps={{
@@ -109,4 +109,4 @@ function Page3() {
   );
 }
 
-export default memo(Page3)
+export default memo(Page1)

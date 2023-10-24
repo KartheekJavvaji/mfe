@@ -2,8 +2,8 @@ import { memo } from "react";
 import dayjs from "dayjs";
 import Stack from '@components/atoms/Stack';
 import Typography from '@components/atoms/Typography';
-import StaticDateRangePicker from "@components/molecules/DateRange/StaticDateRangePicker";
-import MultiInputDateTimeRangeField from "@components/molecules/DateRange/MultiInputDateTimeRangeField";
+import StaticDateRangePicker from "@components/molecules/DateRangeWithLocalProvider/StaticDateRangePicker";
+import MultiInputDateTimeRangeField from "@components/molecules/DateRangeWithLocalProvider/MultiInputDateTimeRangeField";
 
 import type { DateRange, PickersShortcutsItem } from "@components/molecules/DateRange/types";
 import type { Dayjs } from "dayjs";
@@ -14,6 +14,7 @@ type CustomDateRangePickerToolbarProps = any
 function CustomDateRangePickerToolbar(
   props: CustomDateRangePickerToolbarProps
 ) {
+  console.log(props);
   const { onChange, value, disabled } = props;
   return (
     <Stack 
@@ -83,10 +84,10 @@ const shortcutsItems: PickersShortcutsItem<DateRange<Dayjs>>[] = [
   { label: "Reset", getValue: () => [null, null] }
 ];
 
-function Page3() {
+function Page4() {
   return (
     <Stack>
-      <Typography>local app | needs root to have singleton LocalizationProvider</Typography>
+      <Typography>local app | inbuilt LocalizationProvider</Typography>
       
       <StaticDateRangePicker
         slotProps={{
@@ -109,4 +110,4 @@ function Page3() {
   );
 }
 
-export default memo(Page3)
+export default memo(Page4)

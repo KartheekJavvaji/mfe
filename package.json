@@ -7,7 +7,15 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "(cd ./app-root && yarn start-mfe) & (cd ./app-module1 && yarn start-mfe)"
+    "start": "(cd ./app-root && yarn start-mfe) & (cd ./app-module1 && yarn start-mfe)",
+    "postinstall": "patch-package"
   },
-  "workspaces": ["app-root", "app-module1", "app-component-system"]
+  "workspaces": [
+    "app-root",
+    "app-module1",
+    "app-component-system"
+  ],
+  "devDependencies": {
+    "patch-package": "^8.0.0"
+  }
 }

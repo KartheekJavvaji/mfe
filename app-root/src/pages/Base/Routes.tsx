@@ -2,27 +2,27 @@ import { memo } from 'react'
 import {
   Switch,
   Route,
-  Redirect,
+  Redirect
 } from 'react-router-dom'
 
 import AppTopBar from '@root/organisms/AppTopBar'
 
 import Module1 from '../FederatedPages/Module1'
-import Page2 from '../Page2'
 import Page3 from '../Page3'
+import Page4 from '../Page4'
 
 function LocalRoutes() {
   return (
     <>
       <Route
-        path="/route2"
-      >
-        <Page2 />
-      </Route>
-      <Route
         path="/route3"
       >
         <Page3 />
+      </Route>
+      <Route
+        path="/route4"
+      >
+        <Page4 />
       </Route>
     </>
   )
@@ -32,14 +32,14 @@ function Routes () {
   return (
     <AppTopBar>
       <Switch>
+        <Redirect exact from="/" to='/route1' />
         <Route
-          path={['/route1', '/date-range-trail']}
+          path={['/route1', '/route2']}
         >
           <Module1 />
         </Route>
         <Route>
           <LocalRoutes />
-          <Redirect to='/route2' />
         </Route>
       </Switch>
     </AppTopBar>

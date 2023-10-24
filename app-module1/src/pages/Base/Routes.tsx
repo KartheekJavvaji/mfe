@@ -3,8 +3,8 @@ import {
   Route,
 } from 'react-router-dom'
 
-import Page1 from '../Page1'
-import DateRangeTrail from '../DateRangeTrail'
+import Page1 from '../Route1'
+import Page2 from '../Route2'
 
 function Routes() {
   return (
@@ -15,9 +15,9 @@ function Routes() {
         <Page1 />
       </Route>
       <Route
-        path="/date-range-trail"
+        path="/route2"
       >
-        <DateRangeTrail />
+        <Page2 />
       </Route>
     </>
   )
