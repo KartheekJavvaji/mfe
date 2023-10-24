@@ -1,0 +1,13 @@
+{
+  "name": "mfe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KartheekJavvaji/mfe.git",
+  "author": "Kartheek Javvaji <kartheek@fiddler.ai>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "(cd ./app-root && yarn start-mfe) & (cd ./app-module1 && yarn start-mfe)"
+  },
+  "workspaces": ["app-root", "app-module1", "app-component-system"]
+}

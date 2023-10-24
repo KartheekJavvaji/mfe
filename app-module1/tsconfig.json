@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "@module1/*": ["./src/*"],
+      "@components/*": ["../app-component-system/src/*"],
+    },
+  },
+  "include": [
+    "./src",
+    "../app-component-system/src",
+  ]
+}
