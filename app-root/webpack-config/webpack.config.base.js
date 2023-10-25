@@ -14,7 +14,7 @@ module.exports = function(env) {
       extensions: ['.tsx', '.ts', '.js', '.jsx'],
       alias: {
         '@root': path.resolve(process.cwd(), 'src'),
-        '@components': 'app-component-system/src',
+        '@components': '@company/app-component-system/src',
       },
       fallback: {
       // below ones are no longer made available as part of base webpack from v5

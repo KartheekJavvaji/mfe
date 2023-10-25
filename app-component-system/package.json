@@ -1,5 +1,5 @@
 {
-  "name": "app-component-system",
+  "name": "@company/app-component-system",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

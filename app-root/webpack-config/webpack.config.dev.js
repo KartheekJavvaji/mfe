@@ -20,7 +20,7 @@ module.exports = function () {
       chunkFilename: "static/js/[name].chunk.js",
       assetModuleFilename: "static/media/[name].[hash][ext]",
       publicPath: "/",
-      uniqueName: "webapp-root",
+      uniqueName: "shell-app",
     },
     devServer: {
       static: path.join(process.cwd(), "/public"),
